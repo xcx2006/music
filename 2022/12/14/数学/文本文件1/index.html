@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="晨曦">
+    
+    <title>
+        
+            【导数问题】高阶导数 |
+        
+        晨曦的博客
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/brands.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/solid.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/regular.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/css2.css">
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://xcx2006.github.io/picture/backgroud1.jpg","dark":"https://xcx2006.github.io/picture/backgroud2.jpg"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"萍水相逢，尽是他乡之客"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_copy":{"enable":true},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.4.2"};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+    
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                晨曦的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/" >
+                                
+                                    
+                                        <i class="fa-regular fa-house"></i>
+                                    
+                                    HOME
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/archives" >
+                                
+                                    
+                                        <i class="fa-regular fa-archive"></i>
+                                    
+                                    ARCHIVES
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/" >
+                                
+                                    
+                                        <i class="fa-regular fa-user"></i>
+                                    
+                                    ABOUT
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/" >
+                         
+                            
+                                <i class="fa-regular fa-house"></i>
+                            
+                            HOME
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/archives" >
+                         
+                            
+                                <i class="fa-regular fa-archive"></i>
+                            
+                            ARCHIVES
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/" >
+                         
+                            
+                                <i class="fa-regular fa-user"></i>
+                            
+                            ABOUT
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+            <div class="article-title">
+                <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">【导数问题】高阶导数</h1></span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">晨曦</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2022-12-14 20:36:07</span>
+        <span class="mobile">2022-12-14 20:36</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%AF%BC%E6%95%B0/">导数</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="1-函数凹凸性"><a href="#1-函数凹凸性" class="headerlink" title="1.函数凹凸性"></a>1.函数凹凸性</h1><p>函数的凹凸性通常是指函数的以下性质：<br>函数凹凸性的定义 ：$$ f(x) $$在区间$$ I $$上有定义，$$ f(x) $$被称为是凹函数当且仅当对于任意$$ x1,x2∈Ix_1,x_2 \in I $$，任意$$ λ∈(0,1)\lambda \in (0,1) $$，有 :<br>$$<br>f(λx1+(1−λ)x22)≤λf(x1)+(1−λ)f(x2)<br>$$<br>$$<br>2f\left( \frac{\lambda x_1+(1-\lambda)x_2}{2} \right) \leq \frac{\lambda f(x_1)+(1-\lambda)f(x_2)}{2}<br>$$<br>注：凸函数当且仅当$$ f(λx1+(1−λ)x22)≥λf(x1)+(1−λ) $$<br>$$f(x2)2f\left( \frac{\lambda x_1+(1-\lambda)x_2}{2} \right) \geq \frac{\lambda f(x_1)+(1-\lambda)f(x_2)}{2}<br>$$<br>但是在高中阶段，由于研究的函数很少涉及抽象函数（即绝大多数函数都有表达式），且多为初等函数，凹凸性的判定可以使用二次导数：</p>
+<p>（若$$ f(x) $$在区间$$ II $$上有二阶导数，）则$$ f(x) $$ 在$$ II $$上为凹函数的充要条件为：<br>$$<br>f″(x)≥0f’’(x) \geq0 $$（也就是切线斜率单调增）（凸函数同理）</p>
+<p>为了加深理解与方便应用，我们来考察一下此两者的几何意义（以凹函数为例）。<br>$$<br>f(x1+x22)≤f(x1)+f(x2) $$<br>$$ 2f\left( \frac{x_1+x_2}{2} \right) \leq \frac{f(x_1)+f(x_2)}{2} $$表明凹函数上任意两点的连线上的点总在曲线上方。<br>$$<br>f″(x)≥0f’’(x) \geq0 $$表明凹函数上点的斜线斜率随着自变量单调递增。</p>
+<p>事实上，凹函数还有一个重要的性质，那就是：在给定区间内，切线始终在函数图像下方。</p>
+<p>我们知道，一阶导数为零的点（特指变号零点，即零点左右值正负性相反的点）是函数单调性变化的点，也就是函数的极值点；二阶导数为零的点（特指编号零点）是函数凹凸性变化的点，我们将之称为拐点。</p>
+<p>拐点处的切线会兼具凹函数，凸函数的一些特点，比如在拐点两侧处于函数图像的不同上下方（异侧相切）。关于切线问题，将在后一个部分有详细介绍。</p>
+<p>（这里说一件有关函数凹凸性的趣事：凹凸性在大学数学中是一块基础的内容，可是诸多教材上有截然相反的定义：有的将二阶导数正定义为凸，可能是因为两者都给人positive的感觉；有的将函数向上凸称为凸函数，比较符合二维图像给人的直观感受。不论如何，大家记住中国古代哲学家庄子的一句话：“物谓之而然。”）</p>
+<h1 id="2-两条曲线在一个点各种各样的相交情形"><a href="#2-两条曲线在一个点各种各样的相交情形" class="headerlink" title="2.两条曲线在一个点各种各样的相交情形"></a>2.两条曲线在一个点各种各样的相交情形</h1><p>在许多超越函数的近似过程中，有时会遇到一个尴尬的情况：当你得到的函数与期望的放缩方向只在相等点的一侧成立，却在另一侧有相反的大小情况。这是你不得不再为另外一边寻找一个近似方法。</p>
+<p>而更为尴尬的是，往往在相等点两侧不同大小的函数有更好的逼近效果。实在令人抓狂。特别是在帕德逼近的近似函数中，有些近似函数与超越函数函数有一致的大小关系，而有些近似函数与超越函数大小关系在相等点有所变化，具体情况如下：</p>
+<p>接下来考虑使用高阶导数分析的方法来解释这一情况。</p>
+<p>考察两个函数$$ f(x) $$与$$ g(x) $$（不妨假设此二函数在所研究区间里面单调性，凹凸性都相同，不妨都单调递增且上凸）：</p>
+<p>首先假设$$ f(x0)&#x3D;g(x0) f(x_0)&#x3D;g(x_0) $$，则两个函数在$$ x&#x3D;x0 $$处有公共点。</p>
+<p>若$$ f′(x0)&gt;g′(x0) f’(x_0)&gt;g’(x_0) $$，在$$ x&#x3D;x0 $$左侧g较大，右侧f较大。</p>
+<p>若$$ f′(x0)&lt;g′(x0) f’(x_0)&lt;g’(x_0) $$，在$$ x&#x3D;x0 $$左侧f较大，右侧g较大。</p>
+<p>若$$ f′(x0)&#x3D;g′(x0) f’(x_0)&#x3D;g’(x_0) $$，两条函数图像有公切线。</p>
+<p>当$$ f′(x0)&#x3D;g′(x0) f’(x_0)&#x3D;g’(x_0) $$时，</p>
+<p>若$$ f″(x0)&gt;g″(x0) f’’(x_0)&gt;g’’(x_0) $$，在$$ x&#x3D;x0 $$附近f均较大，但是处于公切线下方。</p>
+<p>若$$ f″(x0)&lt;g″(x0) f’’(x_0)&lt;g’’(x_0) $$，在$$ x&#x3D;x0 $$附近g均较大，但是处于公切线下方。</p>
+<p>若$$ f″(x0)&#x3D;g″(x0) f’’(x_0)&#x3D;g’’(x_0) $$，进一步讨论如下。</p>
+<p>当$$ f″(x0)&#x3D;g″(x0) f’’(x_0)&#x3D;g’’(x_0) $$时，</p>
+<p>若$$ f(3)(x0)&gt;g(3)(x0) f^{(3)}(x_0)&gt;g^{(3)}(x_0) $$，在$$ x&#x3D;x0 $$ 左侧g较大，右侧f较大，但都处于公切线下方。</p>
+<p>若$$ f(3)(x0)&lt;g(3)(x0) f^{(3)}(x_0)&lt;g^{(3)}(x_0) $$，在$$ x&#x3D;x0 $$左侧g较大，右侧f较大，但都处于公切线下方。</p>
+<p>若$$ f(3)(x0)&#x3D;g(3)(x0) f^{(3)}(x_0)&#x3D;g^{(3)}(x_0) $$ ，进一步讨论如下</p>
+<p>………</p>
+<p>当$$ f(n−1)(x0)&#x3D;g(n−1)(x0) f^{(n-1)}(x_0)&#x3D;g^{(n-1)}(x_0) $$时（若n为偶数），</p>
+<p>若$$ f(n)(x0)&gt;g(n)(x0) f^{(n)}(x_0)&gt;g^{(n)}(x_0) $$，在$$ x&#x3D;x0 $$附近f均较大，但是处于公切线下方。</p>
+<p>若$$ f(n)(x0)&lt;g(n)(x0) f^{(n)}(x_0)&lt;g^{(n)}(x_0) $$，在$$ x&#x3D;x0 $$附近g均较大，但是处于公切线下方。</p>
+<p>若$$ f(n)(x0)&#x3D;g(n)(x0) f^{(n)}(x_0)&#x3D;g^{(n)}(x_0) $$，进一步讨论。</p>
+<p>当$$ f(n−1)(x0)&#x3D;g(n−1)(x0) f^{(n-1)}(x_0)&#x3D;g^{(n-1)}(x_0) $$时（若n为奇数），</p>
+<p>若$$ f(n)(x0)&gt;g(n)(x0) f^{(n)}(x_0)&gt;g^{(n)}(x_0) $$，在$$ x&#x3D;x0 $$左侧g较大，右侧f较大，但都处于公切线下方。</p>
+<p>若$$ f(n)(x0)&lt;g(n)(x0) f^{(n)}(x_0)&lt;g^{(n)}(x_0) $$，在$$ x&#x3D;x0 $$左侧g较大，右侧f较大，但都处于公切线下方。</p>
+<p>若$$ f(n)(x0)&#x3D;g(n)(x0) f^{(n)}(x_0)&#x3D;g^{(n)}(x_0) $$，进一步讨论。</p>
+<p>……</p>
+<p>总结：</p>
+<p>在奇数阶导数恰好相等时有一致的大小关系（同侧相切）。</p>
+<p>在偶数阶导数恰好相等时有变化的大小关系（异侧相切）。</p>
+<p>（恰好指之前的若干阶导数均相同但是后一阶导数不同）</p>
+<p>在$$ f(x)&#x3D;exf(x)&#x3D;e^x 与 f(x)&#x3D;ln⁡xf(x)&#x3D; \ln x $$的帕德逼近中，我们可以发现，处于某几个对角线的函数恰好有这样的关系，这从一个角度验证了这一个规律。</p>
+<p>可以发现，蓝色部分的逼近部分都有一致的单调性，据此可以猜测：在帕德逼近中，当分子分母次数之和为奇数时，近似函数与原有的超越函数在取等点有一致的大小关系；当分子分母次数之和为偶数时，近似函数与原有的超越函数在取等点有变化的大小关系。<br>3.有关高阶导数的方法</p>
+<p>先用函数$$ f(x)&#x3D;2x−2x2+2 −ln⁡xf(x)&#x3D;2x- \sqrt{2x^2+2} \ - \ln x $$恒大于0来说明情况。</p>
+<p>不难发现$$ f(1)&#x3D;2−1−1&#x3D;0f(1)&#x3D;2-1-1&#x3D;0 $$，</p>
+<pre><code>想法1
+</code></pre>
+<p>求导得到$$ f′(x)&#x3D;2−2x2x2+2−1x f’(x)&#x3D;2-\frac{2x}{2x^2+2}-\frac{1}{x} $$ ，则有$$ f′(1)&#x3D;2−1−1&#x3D;0 f’(1)&#x3D;2-1-1&#x3D;0<br>$$<br>继续求导$$ f″(x)&#x3D;−4(2x2+2)32+1x2 f’’(x)&#x3D;- \frac{4}{(2x^2+2)^{\frac{3}{2}}} +\frac{1}{x^2} $$则有$$ f″&#x3D;−12+1&#x3D;12 f’’&#x3D;-\frac{1}{2}+1&#x3D;\frac{1}{2}<br>$$<br>再不难分析得到$$ 1x2≥4(2x2+2)  32 \frac{1}{x^2} \geq \frac{4}{(2x^2+2)^{\frac{3}{2}}} $$，即可完成本题的证明。</p>
+<p>不妨设想，如果我们最后的不等式不成立或是证明其成立比较繁琐，也就是在二阶导数有零点的情况下，上述分析方法变得不再有力，我们或许需要通过放缩来完成这一证明。</p>
+<pre><code>想法2
+</code></pre>
+<p>提到放缩，可能会想到将$$ ln⁡x\ $$放缩成为$$ x−1 $$，也就是：<br>$$<br>f(x)≥g(x)&#x3D;2x−2x2+2 −(x−1) f(x)\geq g(x)&#x3D;2x- \sqrt{2x^2+2} \ - (x-1)<br>$$<br>这时，由于切线放缩的性质，仍然有：$$ g(1)&#x3D;2−1−1&#x3D;0 g(1)&#x3D;2-1-1&#x3D;0 $$</p>
+<p>随后求导发现：<br>$$<br>g′(x)&#x3D;2−2x2x2+2−1 g’(x)&#x3D;2- \frac{2x}{\sqrt{2x^2+2}} - 1 $$，仍然有： $$ g′(x)&#x3D;2−1−1&#x3D;0 g’(x)&#x3D;2-1-1&#x3D;0 $$</p>
+<p>只要我们孜孜不倦地求导：</p>
+<p>$$ g″(x)&#x3D;−4(2x2+2)32 g’’(x)&#x3D;- \frac{4}{(2x^2+2)^{\frac{3}{2}}} $$，就会发现$$ g″(1)&#x3D;−12 g’’(1)&#x3D;-\frac{1}{2} $$，无法得证。</p>
+<p>其原因在于放缩过头，导致“过犹不及”，这一步切线放缩在二阶导数的变化大于所能承受的范围。</p>
+<pre><code>想法3
+</code></pre>
+<p>我们要控制放缩的力度，考虑到$$ ln⁡x≤2x−2\ln x \leq 2 \sqrt{x}-2<br>$$<br>则有 :<br>$$<br>f(x)≥h(x)&#x3D;2x−2x2+2−(2x−2)f(x) \geq h(x) &#x3D; 2x-\sqrt{2x^2+2}-(2\sqrt{x}-2) ， h′(1)&#x3D;2−1−1&#x3D;0h’(1)&#x3D;2-1-1&#x3D;0 。<br>$$<br>$$<br>h′(x)&#x3D;2−2x2x2+2−1xh’(x)&#x3D;2-\frac{2x}{2x^2+2}-\frac{1}{\sqrt{x}} ， h′(1)&#x3D;2−1−1&#x3D;0h’(1)&#x3D;2-1-1&#x3D;0 。<br>$$<br>$$<br>h″(x)&#x3D;−4(2x2+2)32+12x32h’’(x)&#x3D;- \frac{4}{(2x^2+2)^{\frac{3}{2}}} +\frac{1}{2x^{\frac{3}{2}}} ， h″(1)&#x3D;−12+12&#x3D;0h’’(1)&#x3D;-\frac{1}{2}+\frac{1}{2}&#x3D;0 。<br>$$<br>继续求导有$$ h(3)(1)&#x3D;0 h^{(3)}(1)&#x3D;0 $$，$$ h^(4)(x)≥0h^{(4)}(x) \geq 0 $$ ，亦得证。</p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：【导数问题】高阶导数</li>
+        <li>Post author：晨曦</li>
+        <li>Create time：2022-12-14 20:36:07</li>
+        <li>
+            Post link：https://www.xcx2006.github.io/2022/12/14/数学/文本文件1/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%AF%BC%E6%95%B0/">#导数</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2022/12/14/%E6%95%B0%E5%AD%A6/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B63/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">二次曲线系</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2022/12/14/%E6%95%B0%E5%AD%A6/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">用复数方法证明三角恒等式</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%87%BD%E6%95%B0%E5%87%B9%E5%87%B8%E6%80%A7"><span class="nav-text">1.函数凹凸性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E4%B8%A4%E6%9D%A1%E6%9B%B2%E7%BA%BF%E5%9C%A8%E4%B8%80%E4%B8%AA%E7%82%B9%E5%90%84%E7%A7%8D%E5%90%84%E6%A0%B7%E7%9A%84%E7%9B%B8%E4%BA%A4%E6%83%85%E5%BD%A2"><span class="nav-text">2.两条曲线在一个点各种各样的相交情形</span></a></li></ol>
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fa-solid fa-heart icon-animate"></i>&nbsp;<a href="/">晨曦. All Rights Reserved.</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalviews&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v0.4.2</a>
+        </div>
+        
+        
+        <script async data-pjax defer>
+            function odometer_init(){
+                    let el = document.getElementsByClassName('odometer');
+                    for (i = 0; i < el.length; i++) {
+                        od = new Odometer({
+                            el: el[i],
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    }
+            }
+            odometer_init();
+        </script>
+        <div id="start_time_div" style="display:none">
+            2022/8/17 11:45:14
+        </div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fa-solid fa-left-right"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fa-solid fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fa-solid fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fa-solid fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fa-solid fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+<script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/utils.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/main.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/header-shrink.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/back2top.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/dark-light-toggle.js"></script>
+
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/code-copy.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/lazyload.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/runtime.js"></script>
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/odometer.min.js"></script>
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/odometer-theme-minimal.css">
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/toc-toggle.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/libs/anime.min.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

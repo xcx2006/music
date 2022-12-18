@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="晨曦">
+    
+    <title>
+        
+            用复数方法证明三角恒等式 |
+        
+        晨曦的博客
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/brands.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/solid.min.css">
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/regular.min.css">
+    
+    
+    
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/css2.css">
+    <script id="hexo-configurations">
+    let REDEFINE = window.REDEFINE || {};
+    REDEFINE.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://xcx2006.github.io/picture/backgroud1.jpg","dark":"https://xcx2006.github.io/picture/backgroud2.jpg"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":"萍水相逢，尽是他乡之客"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_copy":{"enable":true},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.4.2"};
+    REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+    
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                晨曦的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/" >
+                                
+                                    
+                                        <i class="fa-regular fa-house"></i>
+                                    
+                                    HOME
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/archives" >
+                                
+                                    
+                                        <i class="fa-regular fa-archive"></i>
+                                    
+                                    ARCHIVES
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                        <li class="menu-item">
+                            <!-- Menu -->
+                            <a class="" 
+                                href="/" >
+                                
+                                    
+                                        <i class="fa-regular fa-user"></i>
+                                    
+                                    ABOUT
+                                
+                            </a>
+                            <!-- Submenu -->
+                            
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/" >
+                         
+                            
+                                <i class="fa-regular fa-house"></i>
+                            
+                            HOME
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/archives" >
+                         
+                            
+                                <i class="fa-regular fa-archive"></i>
+                            
+                            ARCHIVES
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class="" 
+                       href="/" >
+                         
+                            
+                                <i class="fa-regular fa-user"></i>
+                            
+                            ABOUT
+                        
+                    </a>
+                </li>
+                <!-- Submenu -->
+                
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+            <div class="article-title">
+                <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">用复数方法证明三角恒等式</h1></span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.svg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">晨曦</span>
+                            
+                                <span class="author-label">Lv3</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="pc">2022-12-14 16:02:07</span>
+        <span class="mobile">2022-12-14 16:02</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%A4%8D%E6%95%B0/">复数</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <h1 id="用复数方法证明三角恒等式"><a href="#用复数方法证明三角恒等式" class="headerlink" title="用复数方法证明三角恒等式"></a>用复数方法证明三角恒等式</h1><p>曾写过：“复数，通往真理的最短路径”。复数的便利，在于它沟通了代数和几何。今天，让我们用复数方法证明三角恒等式。<br>理论基础</p>
+<p>要借助复数证明三角恒等式，我们一般需要构造具有以下形式的复数：<br>$$<br>w&#x3D;cos⁡α+isin⁡α<br>w&#x3D;\cos \alpha+i\sin\alpha\<br>$$<br>这类复数具有许多好的性质，我们熟知的有：<br>$$<br>(cos⁡α+isin⁡α)(cos⁡β+isin⁡β)&#x3D;cos⁡(α+β)+isin⁡(α+β)<br>(\cos\alpha+i\sin\alpha)(\cos\beta+i\sin\beta)&#x3D;\cos(\alpha+\beta)+i\sin(\alpha+\beta)\\tag{1}<br>$$<br>$$<br>(cos⁡α+isin⁡α)n&#x3D;cos⁡nα+isin⁡nα<br>(\cos\alpha+i\sin\alpha)^n&#x3D;\cos n\alpha+i\sin n\alpha\\tag{2}<br>$$<br>此外，我们再引入另外两条常用的性质：<br>$$<br>1−(cos⁡α+isin⁡α)n&#x3D;1−(cos⁡nα2+isin⁡nα2)2&#x3D;1−(cos2⁡nα2−sin2⁡nα2+2isin⁡nα2cos⁡nα2)&#x3D;2sin2⁡nα2−2isin⁡nα2cos⁡nα2&#x3D;−2isin⁡nα2(cos⁡nα2+isin⁡nα2)\begin{eqnarray} 1-(\cos\alpha+i\sin\alpha)^n&amp;&#x3D;&amp;1-\left(\cos{\frac{n\alpha}2+i\sin{\frac{n\alpha}2}}\right)^{2}\ &amp;&#x3D;&amp;1-\left(\cos^2{\frac{n\alpha}2}-\sin^2{\frac{n\alpha}2}+2i\sin{\frac{n\alpha}2}\cos{\frac{n\alpha}2}\right)\ &amp;&#x3D;&amp;2\sin^2{\frac{n\alpha}2}-2i\sin{\frac{n\alpha}2}\cos{\frac{n\alpha}2}\ &amp;&#x3D;&amp;-2i\sin{\frac{n\alpha}2}\left(\cos{\frac{n\alpha}2}+i\sin{\frac{n\alpha}2}\right) \end{eqnarray}<br>$$<br>故：<br>$$<br>1−(cos⁡α+isin⁡α)n&#x3D;−2isin⁡nα2(cos⁡nα2+isin⁡nα2)<br>1-(\cos\alpha+i\sin\alpha)^n&#x3D;-2i\sin{\frac{n\alpha}2}\left(\cos{\frac{n\alpha}2}+i\sin{\frac{n\alpha}2}\right)\\tag{3}<br>$$</p>
+<p>同理可得：<br>$$<br>1+(cos⁡α+isin⁡α)n&#x3D;2cos⁡nα2(cos⁡nα2+isin⁡nα2)<br>1+(\cos\alpha+i\sin\alpha)^n&#x3D;2\cos{\frac{n\alpha}2}\left(\cos{\frac{n\alpha}2}+i\sin{\frac{n\alpha}2}\right)\\tag{4}<br>$$</p>
+<p>累加<br>$$<br>∑k&#x3D;0nsin⁡(α+kβ)&#x3D;sin⁡(α+nβ2)sin⁡(n+12β)sin⁡β2∑k&#x3D;0ncos⁡(α+kβ)&#x3D;cos⁡(α+nβ2)sin⁡(n+12β)sin⁡β2<br>\begin{eqnarray} \sum_{k&#x3D;0}^n\sin(\alpha+k\beta)&amp;&#x3D;&amp;\frac{\sin\left(\alpha+\frac{n\beta}2\right)\sin\left(\frac{n+1}2\beta\right)}{\sin\frac{\beta}2}\ \sum_{k&#x3D;0}^n\cos(\alpha+k\beta)&amp;&#x3D;&amp;\frac{\cos\left(\alpha+\frac{n\beta}2\right)\sin\left(\frac{n+1}2\beta\right)}{\sin\frac{\beta}2} \end{eqnarray}\\tag{5}<br>$$<br>证明：设<br>    $$<br>    w1&#x3D;cos⁡α+isin⁡α,w2&#x3D;cos⁡β+isin⁡βw_1&#x3D;\cos \alpha+i\sin\alpha,,w_2&#x3D;\cos \beta+i\sin\beta ，则：<br>    ∑k&#x3D;0ncos⁡(α+kβ)+i∑k&#x3D;0nsin⁡(α+kβ)&#x3D;∑k&#x3D;0n[cos⁡(α+kβ)+isin⁡(α+kβ)]&#x3D;w1∑k&#x3D;0nw2k&#x3D;w1(1−w2n+11−w2)&#x3D;(cos⁡α+isin⁡α)−2isin⁡(n+1)β2[cos⁡(n+1)β2+isin⁡(n+1)β2]−2isin⁡β2(cos⁡β2+isin⁡β2)&#x3D;cos⁡(α+nβ2)sin⁡(n+12β)sin⁡β2+isin⁡(α+nβ2)sin⁡(n+12β)sin⁡β2\begin{eqnarray} \sum_{k&#x3D;0}^n\cos(\alpha+k\beta)+i\sum_{k&#x3D;0}^n\sin(\alpha+k\beta)&amp;&#x3D;&amp;\sum_{k&#x3D;0}^n\left[\cos(\alpha+k\beta)+i\sin(\alpha+k\beta)\right]\&amp;&#x3D;&amp;w_1\sum_{k&#x3D;0}^nw_2^k \&amp;&#x3D;&amp;w_1\left(\frac{1-w_2^{n+1}}{1-w_2}\right)\ &amp;&#x3D;&amp;(\cos \alpha+i\sin\alpha)\frac{-2i\sin{\frac{(n+1)\beta}2}\left[\cos{\frac{(n+1)\beta}2}+i\sin{\frac{(n+1)\beta}2}\right]}{-2i\sin{\frac{\beta}2}\left(\cos{\frac{\beta}2}+i\sin{\frac{\beta}2}\right)}\ &amp;&#x3D;&amp;\frac{\cos\left(\alpha+\frac{n\beta}2\right)\sin\left(\frac{n+1}2\beta\right)}{\sin\frac{\beta}2}+i\frac{\sin\left(\alpha+\frac{n\beta}2\right)\sin\left(\frac{n+1}2\beta\right)}{\sin\frac{\beta}2} \end{eqnarray}<br>    $$<br>    对比虚实部，即证</p>
+<p>令 $$ α&#x3D;β\alpha&#x3D;\beta $$，得：</p>
+<p>$$<br>∑k&#x3D;1nsin⁡kα&#x3D;sin⁡(n+1)α2sin⁡nα2sin⁡α2∑k&#x3D;1ncos⁡kα&#x3D;cos⁡(n+1)α2sin⁡nα2sin⁡α2\sum_{k&#x3D;1}^n\sin k\alpha&#x3D;\frac{\sin{\frac{(n+1)\alpha}2}\sin{\frac{n\alpha}{2}}}{\sin{\frac{\alpha}2}}\ \sum_{k&#x3D;1}^n\cos k\alpha&#x3D;\frac{\cos{\frac{(n+1)\alpha}2}\sin{\frac{n\alpha}{2}}}{\sin{\frac{\alpha}2}}<br>$$<br>我们可以证明许多有趣的式子：<br>$$<br>cos⁡π7+cos⁡3π7+cos⁡5π7&#x3D;12\cos\frac{\pi}{7}+\cos\frac{3\pi}{7}+\cos\frac{5\pi}{7}&#x3D;\frac{1}{2}<br>$$<br>$$<br>cos⁡π9+cos⁡5π9+cos⁡7π9&#x3D;0\cos\frac{\pi}{9}+\cos\frac{5\pi}{9}+\cos\frac{7\pi}{9}&#x3D;0<br>$$<br>连乘</p>
+<p>要证明与三角函数有关的连乘式，我们需要考虑多项式的分解，例如：<br>$$<br>z5−1&#x3D;(z−1)(z4+z3+z2+z+1)<br>z^5-1&#x3D;(z-1)(z^4+z^3+z^2+z+1)\<br>$$<br>记<br>$$ w&#x3D;cos⁡π5+isin⁡π5w&#x3D;\cos\frac{\pi}5+i\sin\frac{\pi}5 ，z5−1&#x3D;0z^5-1&#x3D;0 $$有$$ w2,w4,w6,w8,w10w^2,w^4,w^6,w^8,w^{10} 五个根，而 w10&#x3D;1w^{10}&#x3D;1 $$ ，于是有：<br>$$<br>z4+z3+z2+z+1&#x3D;(z−w2)(z−w4)(z−w6)(z−w8)<br>z^4+z^3+z^2+z+1&#x3D;(z-w^2)(z-w^4)(z-w^6)(z-w^8)\<br>$$<br>我们发现，如果我们代入 z&#x3D;1z&#x3D;1 ，就能利用上述的 (3)(3) ，得到关于 sin\sin 的连乘式；如果我们代入 z&#x3D;−1z&#x3D;-1 ，就能利用上述的 (4)(4) ，得到关于 cos\cos 的连乘式</p>
+<p>下面我们具体讨论以下两类不同的方程：<br>$$<br>z2k−1+1&#x3D;0z2k−1−1&#x3D;0z2k−1&#x3D;0<br>\begin{eqnarray} z^{2k-1}+1&amp;&#x3D;&amp;0\z^{2k-1}-1&amp;&#x3D;&amp;0 \z^{2k}-1&amp;&#x3D;&amp;0\end{eqnarray}\<br>$$<br>记$$ w&#x3D;cos⁡π2m−1+isin⁡π2m−1w&#x3D;\cos\frac{\pi}{2m-1}+i\sin\frac{\pi}{2m-1} $$，则 w,w3⋯,w4m−3w,$$ w^3\cdots $$,$$ w^{4m-3} $$是$$ z2m−1+1&#x3D;0z^{2m-1}+1&#x3D;0 $$的$$ 2m−12m-1 $$个根</p>
+<p>又因为$$ w2m−1&#x3D;−1w^{2m-1}&#x3D;-1 $$，于是 w⋯,w2m−3,w2m+1⋯,$$ w4m−3w\cdots $$,$$ w^{2m-3},w^{2m+1}\cdots $$,$$ w^{4m-3} $$是$$ z2m−1+1&#x3D;0z^{2m-1}+1&#x3D;0 $$的 2m−22m-2 个虚根</p>
+<p>由因式分解$$ z2m−1+1&#x3D;(z+1)(z2m−2−z2m−3+⋯+z2−z+1)z^{2m-1}+1&#x3D;(z+1)(z^{2m-2}-z^{2m-3}+\cdots+z^{2}-z+1) $$，知：<br>$$<br>z2m−2−z2m−3+⋯−z+1&#x3D;(z−w)⋯(z−w2m−3)(z−w2m+1)⋯(z−w4m−3)<br>z^{2m-2}-z^{2m-3}+\cdots-z+1&#x3D;(z-w)\cdots(z-w^{2m-3})(z-w^{2m+1})\cdots(z-w^{4m-3})\<br>$$<br>代入，并置$$ μ&#x3D;w12\mu&#x3D;w^{\frac12} $$，z&#x3D;1z&#x3D;1 得：<br>$$<br>1&#x3D;(1−w)⋯(1−w2m−3)(1−w2m+1)⋯(1−w4m−3)&#x3D;(−2iμsin⁡π4m−2)⋯[−2iμ2m−3sin⁡(2m−3)π4m−2][−2iμ2m+1sin⁡(2m+1)π4m−2]⋯[−2iμ4m−3sin⁡(4m−3)π4m−2]&#x3D;(−2i)2m−2μ(2m−1)(2m−2)∏k&#x3D;12m−1sin⁡(2k−1)π4m−2&#x3D;4m−1(−1)m−1cos⁡(m−1)π∏k&#x3D;12m−1sin⁡(2k−1)π4m−2&#x3D;4m−1∏k&#x3D;12m−1sin⁡(2k−1)π4m−2<br>\begin{eqnarray} 1&amp;&#x3D;&amp;(1-w)\cdots(1-w^{2m-3})(1-w^{2m+1})\cdots(1-w^{4m-3})\&amp;&#x3D;&amp;\left(-2i\mu\sin\frac{\pi}{4m-2}\right)\cdots\left[-2i\mu^{2m-3}\sin\frac{(2m-3)\pi}{4m-2}\right]\left[-2i\mu^{2m+1}\sin\frac{(2m+1)\pi}{4m-2}\right]\cdots\left[-2i\mu^{4m-3}\sin\frac{(4m-3)\pi}{4m-2}\right]\&amp;&#x3D;&amp;(-2i)^{2m-2}{\mu}^{(2m-1)(2m-2)}\prod_{k&#x3D;1}^{2m-1}\sin{\frac{(2k-1)\pi}{4m-2}}\ &amp;&#x3D;&amp;4^{m-1}(-1)^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{2m-1}\sin{\frac{(2k-1)\pi}{4m-2}}\ &amp;&#x3D;&amp;4^{m-1}\prod_{k&#x3D;1}^{2m-1}\sin{\frac{(2k-1)\pi}{4m-2}} \end{eqnarray}\<br>$$<br>所以：<br>$$<br>∏k&#x3D;12m−1sin⁡(2k−1)π4m−2&#x3D;14m−1<br>\prod_{k&#x3D;1}^{2m-1}\sin{\frac{(2k-1)\pi}{4m-2}}&#x3D;\frac{1}{4^{m-1}}\\tag{6}<br>$$<br>又因为$$ sin⁡(2k−1)π4m−2&#x3D;sin⁡(4m−2k−1)π4m−2\sin\frac{(2k-1)\pi}{4m-2}&#x3D;\sin\frac{(4m-2k-1)\pi}{4m-2} $$，故：<br>$$<br>∏k&#x3D;1m−1sin⁡(2k−1)π4m−2&#x3D;∏k&#x3D;m+12m−1sin⁡(2k−1)π4m−2&#x3D;12m−1<br>\prod_{k&#x3D;1}^{m-1}\sin{\frac{(2k-1)\pi}{4m-2}}&#x3D;\prod_{k&#x3D;m+1}^{2m-1}\sin{\frac{(2k-1)\pi}{4m-2}}&#x3D;\frac{1}{2^{m-1}}\\tag{7}<br>$$<br>代入 z&#x3D;−1z&#x3D;-1 得：<br>$$<br>2m−1&#x3D;(−1−w)⋯(−1−w2m−3)(−1−w2m+1)⋯(−1−w4m−3)&#x3D;(−1)2m−2(1+w)⋯(1+w2m−3)(1+w2m+1)⋯(1+w2m−3)&#x3D;(2μcos⁡π4m−2)⋯[2μ2m−3cos⁡(2m−3)π4m−2][2μ2m+1cos⁡(2m+1)π4m−2]⋯[2μ4m−3cos⁡(4m−3)π4m−2]&#x3D;22m−2μ(2m−1)(2m−2)∏k&#x3D;1m−1cos⁡(2k−1)π4m−2∏k&#x3D;m+12m−1cos⁡(2k−1)π4m−2&#x3D;4m−1cos⁡(m−1)π∏k&#x3D;1m−1cos⁡(2k−1)π4m−2∏k&#x3D;m+12m−1cos⁡(2k−1)π4m−2<br>\begin{eqnarray} 2m-1&amp;&#x3D;&amp;(-1-w)\cdots(-1-w^{2m-3})(-1-w^{2m+1})\cdots(-1-w^{4m-3})\ &amp;&#x3D;&amp;(-1)^{2m-2}(1+w)\cdots(1+w^{2m-3})(1+w^{2m+1})\cdots(1+w^{2m-3})\ &amp;&#x3D;&amp;\left(2\mu\cos\frac{\pi}{4m-2}\right)\cdots\left[2\mu^{2m-3}\cos\frac{(2m-3)\pi}{4m-2}\right]\left[2\mu^{2m+1}\cos\frac{(2m+1)\pi}{4m-2}\right]\cdots\left[2\mu^{4m-3}\cos\frac{(4m-3)\pi}{4m-2}\right]\ &amp;&#x3D;&amp;2^{2m-2}\mu^{(2m-1)(2m-2)}\prod_{k&#x3D;1}^{m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\prod_{k&#x3D;m+1}^{2m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\ &amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\prod_{k&#x3D;m+1}^{2m-1}\cos{\frac{(2k-1)\pi}{4m-2}} \end{eqnarray}\<br>$$<br>又因为$$ cos⁡(2k−1)π4m−2&#x3D;−cos⁡(4m−2k−1)4m−2\cos\frac{(2k-1)\pi}{4m-2}&#x3D;-\cos\frac{(4m-2k-1)}{4m-2} $$，故：<br>$$<br>2m−1&#x3D;4m−1cos⁡(m−1)π∏k&#x3D;1m−1cos⁡(2k−1)π4m−2∏k&#x3D;m+12m−1cos⁡(2k−1)π4m−2&#x3D;4m−1cos⁡(m−1)π(−1)m−1[∏k&#x3D;1m−1cos⁡(2k−1)π4m−2]2\begin{eqnarray} 2m-1&amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\prod_{k&#x3D;m+1}^{2m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\ &amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi(-1)^{m-1}\left[\prod_{k&#x3D;1}^{m-1}\cos{\frac{(2k-1)\pi}{4m-2}}\right]^2 \end{eqnarray}<br>$$<br>于是：<br>$$<br>∏k&#x3D;1m−1cos⁡(2k−1)π4m−2&#x3D;∏k&#x3D;m+12m−1cos⁡(2k−1)π4m−2&#x3D;2m−12m−1<br>\prod_{k&#x3D;1}^{m-1}\cos{\frac{(2k-1)\pi}{4m-2}}&#x3D;\prod_{k&#x3D;m+1}^{2m-1}\cos{\frac{(2k-1)\pi}{4m-2}}&#x3D;\frac{\sqrt{2m-1}}{2^{m-1}}\\tag{8}<br>$$<br>记$$ w&#x3D;cos⁡π2m−1+isin⁡π2m−1w&#x3D;\cos\frac{\pi}{2m-1}+i\sin\frac{\pi}{2m-1} $$，则$$ w2,w4⋯,w4m−2w^2,w^4\cdots,w^{4m-2} $$是$$ z2m−1−1&#x3D;0z^{2m-1}-1&#x3D;0 $$的 2m−12m-1 个根</p>
+<p>又因为$$ w4m−2&#x3D;1w^{4m-2}&#x3D;1 $$，于是$$ w2,w4⋯,w4m−4w^2,w^4\cdots ,w^{4m-4} $$是$$ z2m−1−1&#x3D;0z^{2m-1}-1&#x3D;0 $$的 2m−22m-2 个虚根</p>
+<p>由因式分解$$ z2m−1−1&#x3D;(z−1)(z2m−2+z2m−3+⋯+z2+z+1)z^{2m-1}-1&#x3D;(z-1)(z^{2m-2}+z^{2m-3}+\cdots+z^{2}+z+1) $$，知：<br>$$<br>z2m−2+z2m−3+⋯+z+1&#x3D;(z−w2)⋯(z−w4m−4)<br>z^{2m-2}+z^{2m-3}+\cdots+z+1&#x3D;(z-w^2)\cdots(z-w^{4m-4})\<br>$$<br>代入 z&#x3D;1z&#x3D;1 ，得：</p>
+<p>$$ 2m−1&#x3D;(1−w2)(1−w4)⋯(1−w4m−4)&#x3D;(−2iμ2sin⁡2π4m−2)(−2iμ4sin⁡4π4m−2)[−2iμ4m−4sin⁡(4m−4)π4m−2]&#x3D;(−2i)2m−2μ(2m−1) $$ (2m−2)∏k&#x3D;12m−2sin⁡kπ2m−1&#x3D;4m−1(−1)m−1cos⁡(m−1)π∏k&#x3D;12m−2sin⁡kπ2m−1\begin{eqnarray} 2m-1&amp;&#x3D;&amp;(1-w^2)(1-w^4)\cdots(1-w^{4m-4})\ &amp;&#x3D;&amp;\left(-2i\mu^2\sin\frac{2\pi}{4m-2}\right)\left(-2i\mu^4\sin\frac{4\pi}{4m-2}\right)\cdots\left[-2i\mu^{4m-4}\sin\frac{(4m-4)\pi}{4m-2}\right]\ &amp;&#x3D;&amp;(-2i)^{2m-2}\mu^{(2m-1)(2m-2)}\prod_{k&#x3D;1}^{2m-2}\sin\frac{k\pi}{2m-1}\ &amp;&#x3D;&amp;4^{m-1}(-1)^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{2m-2}\sin\frac{k\pi}{2m-1} \end{eqnarray} \begin{eqnarray} \end{eqnarray} $$<br>于是：<br>$$<br>∏k&#x3D;12m−2sin⁡kπ2m−1&#x3D;2m−14m−1<br>\prod_{k&#x3D;1}^{2m-2}\sin\frac{k\pi}{2m-1}&#x3D;\frac{2m-1}{4^{m-1}}\tag{9}<br>$$<br>代入 z&#x3D;−1z&#x3D;-1 ，得：<br>$$<br>1&#x3D;(−1−w2)(−1−w4)⋯(1−w4m−4)&#x3D;(−1)2m−2(1+w2)(1+w4)⋯<br>(1+w4m−4)&#x3D;(2μ2cos⁡2π4m−2)(2μ4cos⁡4π4m−2)<br>[2μ4m−4cos⁡(4m−4)π4m−2]&#x3D;22m−2μ(2m−1)<br>(2m−2)∏k&#x3D;12m−2cos⁡kπ2m−1&#x3D;4m−1cos⁡(m−1)π∏k&#x3D;12m−2cos⁡kπ2m−1\begin{eqnarray} 1&amp;&#x3D;&amp;(-1-w^2)(-1-w^4)\cdots(1-w^{4m-4})\ &amp;&#x3D;&amp;(-1)^{2m-2}(1+w^2)(1+w^4)\cdots(1+w^{4m-4})\ &amp;&#x3D;&amp;\left(2\mu^2\cos\frac{2\pi}{4m-2}\right)\left(2\mu^4\cos\frac{4\pi}{4m-2}\right)\cdots\left[2\mu^{4m-4}\cos\frac{(4m-4)\pi}{4m-2}\right]\ &amp;&#x3D;&amp;2^{2m-2}\mu^{(2m-1)(2m-2)}\prod_{k&#x3D;1}^{2m-2}\cos\frac{k\pi}{2m-1}\ &amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{2m-2}\cos\frac{k\pi}{2m-1} \end{eqnarray}<br>$$</p>
+<p>故：<br>$$<br>∏k&#x3D;12m−2cos⁡kπ2m−1&#x3D;(−1)m−14m−1<br>\prod_{k&#x3D;1}^{2m-2}\cos\frac{k\pi}{2m-1}&#x3D;\frac{(-1)^{m-1}}{4^{m-1}}\tag{10}<br>$$<br>记 $$ w&#x3D;cos⁡π2m+isin⁡π2mw&#x3D;\cos\frac{\pi}{2m}+i\sin\frac{\pi}{2m} $$，则 $$ w2,w4,…,w4mw^2,w^4,\dots ,w^{4m} $$ 是 $$ z2m−1&#x3D;0z^{2m}-1&#x3D;0 $$ 的 $$ 2m2m $$ 个根</p>
+<p>又因为$$ w2m&#x3D;−1,w4m&#x3D;1w^{2m}&#x3D;-1,,w^{4m}&#x3D;1 $$，于是<br>$$ w2,w2m−2,w2m+2⋯,w4m−2w^2\cdots,w^{2m-2},w^{2m+2}\cdots,w^{4m-2} $$是$$ z2m−1&#x3D;0z^{2m}-1&#x3D;0 $$的$$ 2m−22m-2 $$个虚根</p>
+<p>由因式分解$$ z2m−1&#x3D;(z2−1)(z2m−2+⋯+z4+z2+1)z^{2m}-1&#x3D;(z^2-1)(z^{2m-2}+\cdots+z^4+z^2+1) $$，知：<br>$$<br>z2m−2+⋯+z4+z2+1&#x3D;(z−w2)⋯(z−w2m−2)(z−w2m+2)⋯(z−w4m−2)<br>z^{2m-2}+\cdots+z^4+z^2+1&#x3D;(z-w^2)\cdots(z-w^{2m-2})(z-w^{2m+2})\cdots(z-w^{4m-2})\<br>$$<br>代入 z&#x3D;1z&#x3D;1 ，得：<br>$$ m&#x3D;(1−w2)⋯(1−w2m−2)(1−w2m+2)⋯(1−w4m−2)&#x3D;(−2iμ2sin⁡2π4m)[−2iμ2m−2sin⁡(2m−2)π4m][−2iμ2m+2sin⁡(2m+2)π4m]⋯[−2iμ4m−2sin⁡(4m−2)π4m]&#x3D;(−2i)2m−2μ2m(2m−2)∏k&#x3D;12m−1sin⁡kπ2m&#x3D;22m−2(−1)m−1cos⁡(m−1)π∏k&#x3D;12m−1sin⁡kπ2m&#x3D;4m−1∏k&#x3D;12m−1sin⁡kπ2m\begin{eqnarray} m&amp;&#x3D;&amp;(1-w^2)\cdots(1-w^{2m-2})(1-w^{2m+2})\cdots(1-w^{4m-2})\ &amp;&#x3D;&amp;\left(-2i\mu^2\sin\frac{2\pi}{4m}\right)\cdots\left[-2i\mu^{2m-2}\sin\frac{(2m-2)\pi}{4m}\right]\left[-2i\mu^{2m+2}\sin\frac{(2m+2)\pi}{4m}\right]\cdots\left[-2i\mu^{4m-2}\sin\frac{(4m-2)\pi}{4m}\right]\ &amp;&#x3D;&amp;(-2i)^{2m-2}\mu^{2m(2m-2)}\prod_{k&#x3D;1}^{2m-1}\sin\frac{k\pi}{2m}\ &amp;&#x3D;&amp;2^{2m-2}(-1)^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{2m-1}\sin\frac{k\pi}{2m}\ &amp;&#x3D;&amp;4^{m-1}\prod_{k&#x3D;1}^{2m-1}\sin\frac{k\pi}{2m} \end{eqnarray} $$<br>于是：<br>$$ ∏k&#x3D;12m−1sin⁡kπ2m&#x3D;m4m−1 \prod_{k&#x3D;1}^{2m-1}\sin\frac{k\pi}{2m}&#x3D;\frac{m}{4^{m-1}}\tag{11} $$<br>代入 z&#x3D;−1z&#x3D;-1 ，得：<br>$$<br>m&#x3D;(−1−w2)⋯(−1−w2m−2)(−1−w2m+2)⋯(−1−w4m−2)&#x3D;(−1)2m−2(1+w2)⋯(1+w2m−2)(1+w2m+2)⋯(1+w4m−2)&#x3D;(2μ2cos⁡2π4m)⋯[2μ2m−2cos⁡(2m−2)π4m][2μ2m+2cos⁡(2m+2)π4m]⋯[2μ4m−2cos⁡(4m−2)π4m]&#x3D;22m−2μ2m(m−2)∏k&#x3D;1m−1cos⁡kπ2m∏k&#x3D;m+12m−1cos⁡kπ2m&#x3D;4m−1cos⁡(m−1)π∏k&#x3D;1m−1cos⁡kπ2m∏k&#x3D;m+12m−1cos⁡kπ2m\begin{eqnarray} m&amp;&#x3D;&amp;(-1-w^2)\cdots(-1-w^{2m-2})(-1-w^{2m+2})\cdots(-1-w^{4m-2})\ &amp;&#x3D;&amp;(-1)^{2m-2}(1+w^2)\cdots(1+w^{2m-2})(1+w^{2m+2})\cdots(1+w^{4m-2})\ &amp;&#x3D;&amp;\left(2\mu^2\cos\frac{2\pi}{4m}\right)\cdots\left[2\mu^{2m-2}\cos\frac{(2m-2)\pi}{4m}\right]\left[2\mu^{2m+2}\cos\frac{(2m+2)\pi}{4m}\right]\cdots\left[2\mu^{4m-2}\cos\frac{(4m-2)\pi}{4m}\right]\ &amp;&#x3D;&amp;2^{2m-2}\mu^{2m(m-2)}\prod_{k&#x3D;1}^{m-1}\cos\frac{k\pi}{2m}\prod_{k&#x3D;m+1}^{2m-1}\cos\frac{k\pi}{2m}\ &amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{m-1}\cos\frac{k\pi}{2m}\prod_{k&#x3D;m+1}^{2m-1}\cos\frac{k\pi}{2m} \end{eqnarray}<br>$$<br>又因为$$ cos⁡kπ2m&#x3D;−sin⁡(m+k)π2m\cos\frac{k\pi}{2m}&#x3D;-\sin\frac{(m+k)\pi}{2m} $$，所以：<br>$$<br>m&#x3D;4m−1cos⁡(m−1)π∏k&#x3D;1m−1cos⁡kπ2m∏k&#x3D;m+12m−1cos⁡kπ2m&#x3D;(−1)m−14m−1cos⁡(m−1)π∏k&#x3D;1m−1sin⁡kπ2mcos⁡kπ2m&#x3D;2m−1∏k&#x3D;1m−1sin⁡kπm\begin{eqnarray} m&amp;&#x3D;&amp;4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{m-1}\cos\frac{k\pi}{2m}\prod_{k&#x3D;m+1}^{2m-1}\cos\frac{k\pi}{2m}\ &amp;&#x3D;&amp;(-1)^{m-1}4^{m-1}\cos(m-1)\pi\prod_{k&#x3D;1}^{m-1}\sin\frac{k\pi}{2m}\cos\frac{k\pi}{2m}\ &amp;&#x3D;&amp;2^{m-1}\prod_{k&#x3D;1}^{m-1}\sin\frac{k\pi}{m} \end{eqnarray}<br>$$<br>故：<br>$$<br>∏k&#x3D;1m−1sin⁡kπm&#x3D;m2m−1<br>\prod_{k&#x3D;1}^{m-1}\sin\frac{k\pi}{m}&#x3D;\frac{m}{2^{m-1}}\tag{12}<br>$$<br>实际上， (12)(12) 不过是 (9)(9) 和 (11)(11) 的更一般的形式</p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：用复数方法证明三角恒等式</li>
+        <li>Post author：晨曦</li>
+        <li>Create time：2022-12-14 16:02:07</li>
+        <li>
+            Post link：https://www.xcx2006.github.io/2022/12/14/数学/文本文件/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%A4%8D%E6%95%B0/">#复数</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2022/12/14/%E6%95%B0%E5%AD%A6/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B61/"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">【导数问题】高阶导数</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2022/12/14/c++/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B%E8%AF%BE%E8%AF%BE%E9%80%9A%EF%BC%88C++%EF%BC%89%201/"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">noi</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E5%A4%8D%E6%95%B0%E6%96%B9%E6%B3%95%E8%AF%81%E6%98%8E%E4%B8%89%E8%A7%92%E6%81%92%E7%AD%89%E5%BC%8F"><span class="nav-text">用复数方法证明三角恒等式</span></a></li></ol>
+    </div>
+</div>
+            </div>
+        
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2022&nbsp;<i class="fa-solid fa-heart icon-animate"></i>&nbsp;<a href="/">晨曦. All Rights Reserved.</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalviews&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v0.4.2</a>
+        </div>
+        
+        
+        <script async data-pjax defer>
+            function odometer_init(){
+                    let el = document.getElementsByClassName('odometer');
+                    for (i = 0; i < el.length; i++) {
+                        od = new Odometer({
+                            el: el[i],
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    }
+            }
+            odometer_init();
+        </script>
+        <div id="start_time_div" style="display:none">
+            2022/8/17 11:45:14
+        </div>
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fa-solid fa-left-right"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fa-solid fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fa-solid fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fa-solid fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fa-solid fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+
+<script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/utils.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/main.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/header-shrink.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/back2top.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/dark-light-toggle.js"></script>
+
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/code-copy.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/lazyload.js"></script>
+
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/runtime.js"></script>
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/odometer.min.js"></script>
+    <link rel="stylesheet" href="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/css/odometer-theme-minimal.css">
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/toc-toggle.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/libs/anime.min.js"></script><script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//evan.beee.top/projects/hexo-theme-redefine/v0.4.2/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            REDEFINE.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            REDEFINE.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            REDEFINE.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
