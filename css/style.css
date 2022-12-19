@@ -1839,7 +1839,7 @@ pre .selector-pseudo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, rgba(247,135,54,0.208) 0%, rgba(54,125,247,0.208) 100%);
+  background: linear-gradient(120deg, rgba(247,135,54,0.502) 0%, rgba(54,125,247,0.502) 100%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding-top: 2px;
@@ -2614,19 +2614,19 @@ pre .selector-pseudo {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("https://xcx2006.github.io/picture/backgroud1.jpg") center center/cover no-repeat !important;
+    background: url("https://xcx2006.github.io/picture/backgroud1.webp") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
   .first-screen-container {
-    background: url("https://xcx2006.github.io/picture/backgroud2.jpg") center center/cover no-repeat !important;
+    background: url("https://xcx2006.github.io/picture/backgroud2.webp") center center/cover no-repeat !important;
   }
 }
 .light-mode .first-screen-container {
-  background: url("https://xcx2006.github.io/picture/backgroud1.jpg") center center/cover no-repeat !important;
+  background: url("https://xcx2006.github.io/picture/backgroud1.webp") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
-  background: url("https://xcx2006.github.io/picture/backgroud2.jpg") center center/cover no-repeat !important;
+  background: url("https://xcx2006.github.io/picture/backgroud2.webp") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;
