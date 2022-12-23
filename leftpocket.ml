@@ -1,1 +1,1 @@
-http://xuchengxi.tk
+xuchengxi.tk
