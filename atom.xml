@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-06T12:24:23.466Z</updated>
+  <updated>2023-01-16T13:50:36.842Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有机反应类型</title>
+    <link href="http://example.com/2023/01/16/%E5%8C%96%E5%AD%A6/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B65/"/>
+    <id>http://example.com/2023/01/16/%E5%8C%96%E5%AD%A6/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B65/</id>
+    <published>2023-01-16T13:15:27.784Z</published>
+    <updated>2023-01-16T13:50:36.842Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近发现有机反应类型掌握不牢，重新研究了一下。<br>参考资料：<br>百度百科<br><a class="link"   href="https://zhuanlan.zhihu.com/p/358723659?utm_id=0" >知乎<i class="fa-solid fa-up-right-from-square"></i></a></p><h1 id="游离基反应（自由基型反应）："><a href="#游离基反应（自由基型反应）：" class="headerlink" title="游离基反应（自由基型反应）："></a>游离基反应（自由基型反应）：</h1><p>自由基反应又称游离基反应，是自由基参与的各种化学反应。按共价键均裂方式进行的有机反应称为自由基反应。 [1]  自由基电子壳层的外层有一个不成对的电子，对增加第二个电子有很强的亲和力，故能起强氧化剂的作用。大气中较重要的为OH-自由基，能与各种微量气体发生反应。在光化学烟雾形成的化学反应中，有许多自由基反应，在链反应中起了重要的引发、传递和终止过程的作用。有许多自由基是中间产物，如过氧化氢自由基（HO2-）、烷氧基自由基（RO-）、过氧烷基自由基（RO2-）、酰基自由基（RCO-）等。自由基反应通常在高温、光照或过氧化物存在下进行。</p><h3 id="均裂"><a href="#均裂" class="headerlink" title="均裂"></a>均裂</h3><p>均裂：A：B → A· ＋ B·</p><p>即构成共价键的电子对在断裂时平均分配到两个原子 上，形成带有单电子的活泼原子或基团——游离基（又叫 自由基），这种断裂方式称为共价键的均裂。</p><p>由于分子经过均裂产生自由基而引发的反 应称为自由基型反应。自由基型反应分链引发、链转移和 链终止三个阶段。</p><p>链引发阶段：是产生自由基的阶段。由于键的均裂需要能量，所以链 引发阶段需要加热或光照。<br>链转移阶段：是由一个自由基转变成另一个自由基的阶段，犹如接力 赛一样，自由基不断地传递下去，像一环接一环的链，所以称之为链反应。<br>链终止阶段：是消失自由基的阶段，自由基两两结合成键，所有的自 由基都消失了，自由基反应也就终止了。</p><h2 id="自由基反应"><a href="#自由基反应" class="headerlink" title="自由基反应"></a>自由基反应</h2><p>自由基取代：烷烃卤代、芳烃侧链卤代、烯烃α-H卤代自由基反应<br>自由基加成：烯烃的过氧化效应，部分聚合反应</p><h1 id="离子型反应"><a href="#离子型反应" class="headerlink" title="离子型反应"></a>离子型反应</h1><p>用烃基或酰基取代有机分子中的氢原子、卤原子或有机金属化合物中的金属原子</p><h3 id="异裂"><a href="#异裂" class="headerlink" title="异裂"></a>异裂</h3><p>异裂：A：B → A- ＋ B+（或A+ ＋ B-）</p><p>即构成共价键的电子对在断裂时完全转移到1个 原子上，形成正离子和负离子，这种断裂方式称为共 价键的异裂。</p><p>由分子经过异裂生成离子而引发的反应称为离子型反应。 离子型反应有亲核反应和亲电反应。<br>由亲核试剂进攻而发生的反应称为亲核反应，亲核试剂是对正原子核有显著亲和力而起反应的试剂。<br>由亲电试剂进攻而发生的反应称为亲电反应。亲电试剂是对电子有显著亲合力而起反应的试剂。</p><h2 id="离子型反应-1"><a href="#离子型反应-1" class="headerlink" title="离子型反应"></a>离子型反应</h2><p>亲电加成：烯、炔、二烯烃的加成<br>亲电取代：芳环上的取代反应<br>亲核加成：醛、酮的亲核加成、羟醛缩合反应<br>亲核取代：卤代烃、醇的SN1反应<br>消除反应：卤代烃和醇的E1反应<br>亲核加成—消除反应：羧酸衍生物的代表反应<br>协同反应（反应连续进行，一步完成）：双烯合成、SN2、 E2反应</p><hr><h1 id="反应物和试剂及试剂的分类"><a href="#反应物和试剂及试剂的分类" class="headerlink" title="反应物和试剂及试剂的分类"></a>反应物和试剂及试剂的分类</h1><p>1．反应物和试剂</p><p>反应物(或作用物)和试剂之间并没有十分严格的界限，是个相对的概念、习惯用语。本来相互作用的两种物质，即可互为反应物，也可互为试剂。但为了讨论和研究问题时方便，从经验中人为的规定反应中的一种有机物为反应物，无机物或另一种有机物为试剂。例如：</p><p>乙烯与溴的加成反应，乙烯为反应物，溴为试剂。<br>苯肼与醛、酮的反应，醛、酮为反应物，苯肼为试剂。<br>2．试剂的分类</p><p>有机反应中的试剂(无机试剂和有机试剂) 按有机反应历程可分为极性(或离子型)试剂和非极性(自由基)试剂两大基本类型。非极性试剂是指自由基或容易产生自由基的化合物，极性试剂是指含偶数电子的正、负离子或极性分子。</p><p>试剂：</p><p>极性(或离子型)试剂：含偶数电子的正、负离子或极性分子<br>非极性(自由基)试剂：自由基或容易产生自由基的化合物<br>从试剂的电子结构来看，极性试剂是指那些能够接受和供给一对电子以形成共价键的试剂。因此，极性试剂又分为两类，在离子型反应中供给一对电子与反应物生成共 价键的试剂叫做亲核试剂，而从反应物接受一对电子生共价键的试剂叫做亲电试剂。</p><p>极性试剂：</p><p>亲核试剂：供给一对电子与反应物生成共价键的试剂<br>亲电试剂：从反应物接受一对电子生共价键的试剂<br>从广义的酸、碱概念的角度上来说，路易斯碱都是亲核的， 故为亲核试剂；而路易斯酸都是亲电的，则为亲电试剂</p><p>离子型反应</p><p>亲核反应：由亲核试剂进攻反应物而引起的反应称为亲核反应。<br>亲电反应：由亲电试剂进攻而引起的反应，叫做亲电反应。</p><p>亲核反应又可进一步分为亲核取代反应和亲核加成反应。<br>亲电反应分为亲电取代反应和亲电加成反应。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近发现有机反应类型掌握不牢，重新研究了一下。&lt;br&gt;参考资料：&lt;br&gt;百度百科&lt;br&gt;&lt;a class=&quot;link&quot;   href=&quot;https://zhuanlan.zhihu.com/p/358723659?utm_id=0&quot; &gt;知乎&lt;i class=&quot;fa-soli</summary>
+      
+    
+    
+    
+    <category term="化学" scheme="http://example.com/categories/%E5%8C%96%E5%AD%A6/"/>
+    
+    
+    <category term="有机化学" scheme="http://example.com/tags/%E6%9C%89%E6%9C%BA%E5%8C%96%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>我的世界红石音乐</title>
@@ -456,30 +480,6 @@
     
     
     <category term="导数" scheme="http://example.com/tags/%E5%AF%BC%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fedora删除旧内核，用dnf一条命令搞定</title>
-    <link href="http://example.com/2022/12/15/linux/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/"/>
-    <id>http://example.com/2022/12/15/linux/%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/</id>
-    <published>2022-12-15T03:52:37.000Z</published>
-    <updated>2022-12-15T03:53:17.158Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Fedora删除旧内核，用dnf一条命令搞定"><a href="#Fedora删除旧内核，用dnf一条命令搞定" class="headerlink" title="Fedora删除旧内核，用dnf一条命令搞定"></a>Fedora删除旧内核，用dnf一条命令搞定</h1><p>从新的内核重启后，一条命令</p><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo dnf remove --oldinstallonly</span><br></pre></td></tr></table></figure></div><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">Remove command-specific options:</span><br><span class="line">  --duplicates          删除已安装（重复）的软件包</span><br><span class="line">  --oldinstallonly      移除过期的“仅安装”软件包</span><br></pre></td></tr></table></figure></div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Fedora删除旧内核，用dnf一条命令搞定&quot;&gt;&lt;a href=&quot;#Fedora删除旧内核，用dnf一条命令搞定&quot; class=&quot;headerlink&quot; title=&quot;Fedora删除旧内核，用dnf一条命令搞定&quot;&gt;&lt;/a&gt;Fedora删除旧内核，用dnf一条命令</summary>
-      
-    
-    
-    
-    <category term="linux" scheme="http://example.com/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="http://example.com/tags/linux/"/>
     
   </entry>
   
